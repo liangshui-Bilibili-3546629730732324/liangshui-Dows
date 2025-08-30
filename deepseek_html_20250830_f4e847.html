@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>如何布置.com网站 - 详细教程</title>
+    <title>LSDows操作系统下载</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
         }
         
         body {
-            background-color: #f8f9fa;
-            color: #333;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
             line-height: 1.6;
-            padding-bottom: 40px;
         }
         
         .container {
@@ -28,222 +29,158 @@
         
         header {
             text-align: center;
-            padding: 40px 0;
-            background: linear-gradient(135deg, #3498db, #2c3e50);
-            color: white;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        header h1 {
-            font-size: 2.8rem;
-            margin-bottom: 15px;
-        }
-        
-        header p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
-            opacity: 0.9;
-        }
-        
-        .tutorial-content {
-            display: flex;
-            gap: 30px;
             margin-bottom: 40px;
-        }
-        
-        .steps-sidebar {
-            flex: 1;
-            background: white;
-            border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            align-self: flex-start;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        .steps-sidebar h2 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #3498db;
-        }
-        
-        .steps-list {
-            list-style: none;
-        }
-        
-        .steps-list li {
-            margin-bottom: 15px;
-            padding: 12px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        
-        .steps-list li.active {
-            background: #3498db;
-            color: white;
-        }
-        
-        .steps-list li:hover {
-            background: #e8f4fc;
-        }
-        
-        .steps-list li:hover:not(.active) {
-            color: #333;
-        }
-        
-        .main-content {
-            flex: 3;
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-        }
-        
-        .step {
-            display: none;
-        }
-        
-        .step.active {
-            display: block;
-        }
-        
-        .step h2 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #3498db;
-        }
-        
-        .step-content {
-            margin-bottom: 25px;
-        }
-        
-        .step-content h3 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-        
-        .step-content p {
-            margin-bottom: 15px;
-            color: #555;
-        }
-        
-        .step-content ul, .step-content ol {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-        
-        .step-content li {
-            margin-bottom: 8px;
-        }
-        
-        .info-box {
-            background: #e1f5fe;
-            border-left: 4px solid #0288d1;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        
-        .tip-box {
-            background: #e8f5e9;
-            border-left: 4px solid #388e3c;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        
-        .warning-box {
-            background: #ffebee;
-            border-left: 4px solid #d32f2f;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        
-        .provider-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin: 20px 0;
-        }
-        
-        .provider-card {
-            flex: 1;
-            min-width: 200px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-        }
-        
-        .provider-card h4 {
-            color: #2c3e50;
+        h1 {
+            font-size: 3.5rem;
             margin-bottom: 10px;
+            background: linear-gradient(90deg, #00dbde, #fc00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         
-        .provider-card a {
-            color: #3498db;
-            text-decoration: none;
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-bottom: 20px;
         }
         
-        .provider-card a:hover {
-            text-decoration: underline;
+        .os-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
         }
         
-        .pricing {
-            font-weight: bold;
-            color: #e74c3c;
-            margin-top: 5px;
+        .os-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
         
-        .action-buttons {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
+        .os-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
         }
         
-        .btn {
-            padding: 12px 25px;
-            background: #3498db;
+        .os-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        
+        .os-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        
+        .os-card p {
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.8);
+            min-height: 80px;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(90deg, #00dbde, #fc00ff);
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 50px;
+            font-weight: bold;
             cursor: pointer;
-            transition: background 0.3s;
-            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         
-        .btn:hover {
-            background: #2980b9;
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         }
         
-        .btn-prev {
-            background: #7f8c8d;
+        .coming-soon {
+            background: linear-gradient(90deg, #6a6a6a, #3a3a3a);
+            cursor: not-allowed;
         }
         
-        .btn-prev:hover {
-            background: #636e72;
+        .profile {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+        }
+        
+        .profile h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .bilibili-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: #fb7299;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .bilibili-link:hover {
+            background-color: #ff8db1;
+            transform: scale(1.05);
+        }
+        
+        .bilibili-icon {
+            margin-right: 8px;
         }
         
         footer {
             text-align: center;
             margin-top: 50px;
-            color: #7f8c8d;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
         }
         
         @media (max-width: 768px) {
-            .tutorial-content {
-                flex-direction: column;
+            .os-grid {
+                grid-template-columns: 1fr;
             }
             
-            header h1 {
-                font-size: 2.2rem;
+            h1 {
+                font-size: 2.5rem;
             }
         }
     </style>
@@ -251,379 +188,64 @@
 <body>
     <div class="container">
         <header>
-            <h1>如何布置.com网站</h1>
-            <p>从零开始，一步步教您如何创建和发布自己的.com网站</p>
+            <h1>LSDows 操作系统</h1>
+            <p class="subtitle">体验前所未有的数字旅程 - 简洁、流畅、未来感</p>
         </header>
         
-        <div class="tutorial-content">
-            <div class="steps-sidebar">
-                <h2>教程步骤</h2>
-                <ul class="steps-list">
-                    <li class="active" data-step="1">1. 选择域名</li>
-                    <li data-step="2">2. 选择托管服务</li>
-                    <li data-step="3">3. 域名解析设置</li>
-                    <li data-step="4">4. 准备网站文件</li>
-                    <li data-step="5">5. 上传网站文件</li>
-                    <li data-step="6">6. 测试网站</li>
-                    <li data-step="7">7. 网站优化</li>
-                </ul>
+        <div class="os-grid">
+            <div class="os-card">
+                <div class="os-icon">
+                    <i class="fab fa-windows"></i>
+                </div>
+                <h2>LSDows 10</h2>
+                <p>经典而强大的操作系统，提供稳定流畅的体验，支持各种应用程序和游戏。</p>
+                <a href="#" class="download-btn">立即下载</a>
             </div>
             
-            <div class="main-content">
-                <div class="step active" id="step-1">
-                    <h2>步骤 1: 选择域名</h2>
-                    <div class="step-content">
-                        <h3>什么是域名？</h3>
-                        <p>域名是您网站在互联网上的地址，用户通过输入域名来访问您的网站。例如：google.com, baidu.com。</p>
-                        
-                        <h3>如何选择好的域名？</h3>
-                        <ul>
-                            <li>尽量简短易记</li>
-                            <li>使用.com顶级域名（最通用和可信）</li>
-                            <li>避免使用连字符和数字</li>
-                            <li>与您的品牌或业务相关</li>
-                            <li>容易拼写和发音</li>
-                        </ul>
-                        
-                        <div class="info-box">
-                            <p><strong>提示：</strong> 使用域名生成工具可以帮助您找到可用的域名创意。</p>
-                        </div>
-                        
-                        <h3>推荐域名注册商</h3>
-                        <div class="provider-list">
-                            <div class="provider-card">
-                                <h4>GoDaddy</h4>
-                                <p>全球最大的域名注册商</p>
-                                <p class="pricing">约¥70/年</p>
-                                <a href="#" onclick="return false;">访问网站</a>
-                            </div>
-                            <div class="provider-card">
-                                <h4>Namecheap</h4>
-                                <p>性价比高，提供免费Whois保护</p>
-                                <p class="pricing">约¥80/年</p>
-                                <a href="#" onclick="return false;">访问网站</a>
-                            </div>
-                            <div class="provider-card">
-                                <h4>Google Domains</h4>
-                                <p>谷歌提供的域名服务</p>
-                                <p class="pricing">约¥100/年</p>
-                                <a href="#" onclick="return false;">访问网站</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="action-buttons">
-                        <button class="btn btn-prev" disabled>上一步</button>
-                        <button class="btn btn-next" data-next="2">下一步</button>
-                    </div>
+            <div class="os-card">
+                <div class="os-icon">
+                    <i class="fas fa-window-restore"></i>
                 </div>
-                
-                <div class="step" id="step-2">
-                    <h2>步骤 2: 选择托管服务</h2>
-                    <div class="step-content">
-                        <h3>什么是网站托管？</h3>
-                        <p>网站托管服务提供服务器空间来存储您的网站文件，并确保您的网站能够通过互联网访问。</p>
-                        
-                        <h3>托管类型选择</h3>
-                        <ul>
-                            <li><strong>共享主机</strong> - 适合小型网站，价格便宜</li>
-                            <li><strong>VPS主机</strong> - 适合中型网站，更多控制权</li>
-                            <li><strong>专用服务器</strong> - 适合大型网站，完全控制</li>
-                            <li><strong>云托管</strong> - 可扩展性强，按需付费</li>
-                        </ul>
-                        
-                        <div class="tip-box">
-                            <p><strong>建议：</strong> 对于刚开始的网站，共享主机通常是最经济实惠的选择。</p>
-                        </div>
-                        
-                        <h3>推荐托管服务商</h3>
-                        <div class="provider-list">
-                            <div class="provider-card">
-                                <h4>Bluehost</h4>
-                                <p>官方WordPress推荐主机</p>
-                                <p class="pricing">约¥20/月</p>
-                                <a href="#" onclick="return false;">访问网站</a>
-                            </div>
-                            <div class="provider-card">
-                                <h4>SiteGround</h4>
-                                <p>性能优秀，客户支持好</p>
-                                <p class="pricing">约¥40/月</p>
-                                <a href="#" onclick="return false;">访问网站</a>
-                            </div>
-                            <div class="provider-card">
-                                <h4>Vultr</h4>
-                                <p>云服务器，性能强大</p>
-                                <p class="pricing">约¥30/月</p>
-                                <a href="#" onclick="return false;">访问网站</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="action-buttons">
-                        <button class="btn btn-prev" data-prev="1">上一步</button>
-                        <button class="btn btn-next" data-next="3">下一步</button>
-                    </div>
+                <h2>LSDows 11</h2>
+                <p>新一代操作系统，现代化的界面设计，卓越的性能优化，带您进入计算新纪元。</p>
+                <a href="#" class="download-btn">立即下载</a>
+            </div>
+            
+            <div class="os-card">
+                <div class="os-icon">
+                    <i class="fas fa-hourglass-half"></i>
                 </div>
-                
-                <div class="step" id="step-3">
-                    <h2>步骤 3: 域名解析设置</h2>
-                    <div class="step-content">
-                        <h3>什么是DNS？</h3>
-                        <p>DNS（域名系统）是将域名转换为IP地址的系统，这样浏览器才能找到并加载您的网站。</p>
-                        
-                        <h3>如何设置域名解析？</h3>
-                        <ol>
-                            <li>登录您的域名注册商账户</li>
-                            <li>找到域名管理或DNS设置页面</li>
-                            <li>更改名称服务器(NS记录)为您的托管服务商提供的名称服务器</li>
-                            <li>或添加A记录，将域名指向您的服务器IP地址</li>
-                            <li>保存更改（DNS更改可能需要几小时到48小时才能完全生效）</li>
-                        </ol>
-                        
-                        <div class="info-box">
-                            <p><strong>注意：</strong> 大多数托管服务提供商会提供详细的DNS设置指南，请参考他们的文档。</p>
-                        </div>
-                        
-                        <div class="warning-box">
-                            <p><strong>警告：</strong> DNS更改需要时间传播到全球DNS服务器，在此期间您的网站可能无法立即访问。</p>
-                        </div>
-                    </div>
-                    
-                    <div class="action-buttons">
-                        <button class="btn btn-prev" data-prev="2">上一步</button>
-                        <button class="btn btn-next" data-next="4">下一步</button>
-                    </div>
-                </div>
-                
-                <div class="step" id="step-4">
-                    <h2>步骤 4: 准备网站文件</h2>
-                    <div class="step-content">
-                        <h3>网站文件组成</h3>
-                        <p>一个基本的网站通常包含以下文件：</p>
-                        <ul>
-                            <li><strong>index.html</strong> - 主页文件</li>
-                            <li><strong>style.css</strong> - 样式表文件</li>
-                            <li><strong>script.js</strong> - JavaScript文件</li>
-                            <li><strong>images/</strong> - 图片文件夹</li>
-                        </ul>
-                        
-                        <h3>创建简单的HTML页面</h3>
-                        <p>下面是一个基本网页结构的示例：</p>
-                        <pre style="background: #f4f4f4; padding: 15px; border-radius: 5px; overflow: auto;">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="zh-CN"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;我的网站&lt;/title&gt;
-    &lt;link rel="stylesheet" href="style.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;header&gt;
-        &lt;h1&gt;欢迎来到我的网站&lt;/h1&gt;
-    &lt;/header&gt;
-    &lt;main&gt;
-        &lt;p&gt;这是我的第一个网站！&lt;/p&gt;
-    &lt;/main&gt;
-    &lt;footer&gt;
-        &lt;p&gt;版权所有 © 2023&lt;/p&gt;
-    &lt;/footer&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-                        </pre>
-                        
-                        <div class="tip-box">
-                            <p><strong>提示：</strong> 如果您不熟悉编码，可以使用WordPress等内容管理系统，它们提供可视化编辑界面。</p>
-                        </div>
-                    </div>
-                    
-                    <div class="action-buttons">
-                        <button class="btn btn-prev" data-prev="3">上一步</button>
-                        <button class="btn btn-next" data-next="5">下一步</button>
-                    </div>
-                </div>
-                
-                <div class="step" id="step-5">
-                    <h2>步骤 5: 上传网站文件</h2>
-                    <div class="step-content">
-                        <h3>使用FTP客户端上传文件</h3>
-                        <p>最常用的上传网站文件的方法是使用FTP（文件传输协议）客户端：</p>
-                        <ol>
-                            <li>下载并安装FTP客户端（如FileZilla）</li>
-                            <li>从托管服务商获取FTP登录信息（主机、用户名、密码）</li>
-                            <li>连接到您的服务器</li>
-                            <li>将本地网站文件拖放到服务器上的public_html或www文件夹</li>
-                            <li>等待文件上传完成</li>
-                        </ol>
-                        
-                        <h3>使用控制面板文件管理器</h3>
-                        <p>大多数托管服务提供控制面板（如cPanel），其中包含文件管理器：</p>
-                        <ol>
-                            <li>登录您的托管控制面板</li>
-                            <li>找到并打开"文件管理器"</li>
-                            <li>导航到public_html目录</li>
-                            <li>使用上传功能添加您的网站文件</li>
-                        </ol>
-                        
-                        <div class="info-box">
-                            <p><strong>注意：</strong> 确保您的主页文件命名为index.html、index.php或default.html，这样服务器才能自动识别。</p>
-                        </div>
-                    </div>
-                    
-                    <div class="action-buttons">
-                        <button class="btn btn-prev" data-prev="4">上一步</button>
-                        <button class="btn btn-next" data-next="6">下一步</button>
-                    </div>
-                </div>
-                
-                <div class="step" id="step-6">
-                    <h2>步骤 6: 测试网站</h2>
-                    <div class="step-content">
-                        <h3>网站测试清单</h3>
-                        <p>网站上传后，请进行以下测试：</p>
-                        <ul>
-                            <li>在浏览器中输入您的域名，检查网站是否能正常打开</li>
-                            <li>测试所有页面链接是否正常工作</li>
-                            <li>在不同浏览器（Chrome、Firefox、Safari、Edge）中检查兼容性</li>
-                            <li>在手机和平板上测试响应式设计</li>
-                            <li>检查图片和文件是否全部正确加载</li>
-                            <li>测试表单功能（如果有）</li>
-                        </ul>
-                        
-                        <h3>使用在线工具测试</h3>
-                        <p>以下工具可以帮助您全面测试网站：</p>
-                        <ul>
-                            <li><strong>Google Mobile-Friendly Test</strong> - 测试移动设备兼容性</li>
-                            <li><strong>GTmetrix</strong> - 测试网站加载速度</li>
-                            <li><strong>W3C Validator</strong> - 检查HTML/CSS代码有效性</li>
-                        </ul>
-                        
-                        <div class="warning-box">
-                            <p><strong>重要：</strong> 网站在正式发布前，务必进行全面测试，确保所有功能正常工作。</p>
-                        </div>
-                    </div>
-                    
-                    <div class="action-buttons">
-                        <button class="btn btn-prev" data-prev="5">上一步</button>
-                        <button class="btn btn-next" data-next="7">下一步</button>
-                    </div>
-                </div>
-                
-                <div class="step" id="step-7">
-                    <h2>步骤 7: 网站优化</h2>
-                    <div class="step-content">
-                        <h3>网站性能优化</h3>
-                        <p>优化网站以提高加载速度和用户体验：</p>
-                        <ul>
-                            <li>压缩图片以减少文件大小</li>
-                            <li>启用浏览器缓存</li>
-                            <li>使用CDN（内容分发网络）加速全球访问</li>
-                            <li>最小化CSS和JavaScript文件</li>
-                            <li>减少HTTP请求数量</li>
-                        </ul>
-                        
-                        <h3>搜索引擎优化(SEO)</h3>
-                        <p>提高网站在搜索引擎中的可见度：</p>
-                        <ul>
-                            <li>使用相关关键词优化页面标题和描述</li>
-                            <li>创建高质量的内容</li>
-                            <li>确保网站结构清晰，URL简洁</li>
-                            <li>添加alt文本到所有图片</li>
-                            <li>创建XML网站地图并提交到Google Search Console</li>
-                        </ul>
-                        
-                        <h3>安全优化</h3>
-                        <p>保护您的网站和访问者：</p>
-                        <ul>
-                            <li>安装SSL证书启用HTTPS</li>
-                            <li>定期更新软件和插件</li>
-                            <li>使用强密码和双因素认证</li>
-                            <li>定期备份网站</li>
-                            <li>安装安全插件（如Wordfence对于WordPress）</li>
-                        </ul>
-                        
-                        <div class="tip-box">
-                            <p><strong>恭喜！</strong> 您的网站现在已经上线并进行了基本优化。定期更新内容和维护网站是保持网站健康运行的关键。</p>
-                        </div>
-                    </div>
-                    
-                    <div class="action-buttons">
-                        <button class="btn btn-prev" data-prev="6">上一步</button>
-                        <button class="btn" id="btn-complete">完成教程</button>
-                    </div>
-                </div>
+                <h2>LSDows 7</h2>
+                <p>即将推出的复古风格操作系统，融合经典设计与现代技术，致敬传奇。</p>
+                <a class="download-btn coming-soon">即将发布</a>
             </div>
         </div>
         
+        <div class="profile">
+            <h2>关于开发者</h2>
+            <img src="https://via.placeholder.com/120" alt="开发者头像" class="profile-img">
+            <h3>一只路过的小凉水_Eggy</h3>
+            <p>热爱编程与设计的开发者，创造有趣且实用的软件体验。</p>
+            <a href="https://space.bilibili.com/3546629730732324?spm_id_from=333.337.0.0" target="_blank" class="bilibili-link">
+                <i class="fab fa-bilibili bilibili-icon"></i> 我的B站主页
+            </a>
+        </div>
+        
         <footer>
-            <p>© 2023 .com网站布置教程 | 提供从零开始的完整网站建设指南</p>
+            <p>© 2023 LSDows操作系统 | 本页面仅作为展示用途</p>
         </footer>
     </div>
 
     <script>
-        // 步骤切换功能
-        document.addEventListener('DOMContentLoaded', function() {
-            const stepItems = document.querySelectorAll('.steps-list li');
-            const steps = document.querySelectorAll('.step');
-            
-            // 点击步骤列表项
-            stepItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    const stepNum = this.getAttribute('data-step');
-                    
-                    // 更新活动步骤指示器
-                    stepItems.forEach(i => i.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    // 显示对应步骤内容
-                    steps.forEach(step => step.classList.remove('active'));
-                    document.getElementById(`step-${stepNum}`).classList.add('active');
+        // 简单的下载按钮交互
+        document.querySelectorAll('.download-btn').forEach(btn => {
+            if (!btn.classList.contains('coming-soon')) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // 这里可以添加实际的下载逻辑
+                    alert('开始下载（实际项目中这里会触发文件下载）');
                 });
-            });
-            
-            // 下一步按钮
-            const nextButtons = document.querySelectorAll('.btn-next');
-            nextButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const nextStep = this.getAttribute('data-next');
-                    
-                    // 更新活动步骤指示器
-                    stepItems.forEach(i => i.classList.remove('active'));
-                    document.querySelector(`.steps-list li[data-step="${nextStep}"]`).classList.add('active');
-                    
-                    // 显示下一步内容
-                    steps.forEach(step => step.classList.remove('active'));
-                    document.getElementById(`step-${nextStep}`).classList.add('active');
-                    
-                    // 滚动到顶部
-                    document.querySelector('.main-content').scrollTop = 0;
-                });
-            });
-            
-            // 上一步按钮
-            const prevButtons = document.querySelectorAll('.btn-prev');
-            prevButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    if (!this.disabled) {
-                        const prevStep = this.getAttribute('data-prev');
-                        
-                        // 更新活动步骤指示器
-                        stepItems.forEach(i => i.classList.remove('active'));
-                        document.querySelector(`.steps-list li[data-step="${prevStep}"]`).classList.add('active');
-                        
-                        // 显示上一步内容
-                        steps.forEach(step => step.classList.remove('active'));
-                        document.getElementById(`step-${prevStep}`).classList.add('active');
-                        
-                        // 滚动到顶部
-                        document.querySelector('.main-content').scrollTop = 0;
-                    }
-                });
-            });
-            
-            // 完成按钮
-            document.getElementById('btn-complete').addEventListener('click', function() {
-                alert('恭喜！您已经完成了.com网站布置教程。祝您网站建设顺利！');
-            });
+            }
         });
     </script>
 </body>
